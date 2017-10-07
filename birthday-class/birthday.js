@@ -55,4 +55,4 @@ let inputArray = ["Van Halen, Eddie, 1, 13, 1955",
                   "Dwarakanath, Arvind, 9, 25, 1987", 
                   "Gandhi, , 9, 25, 1987", 
                   "Piper, Peter, 9, 12, 1984"];
-console.log(createBirthDay(inputArray));
+createBirthDay(inputArray).forEach(function(entry) { console.log(entry) });
