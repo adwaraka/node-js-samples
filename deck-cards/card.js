@@ -50,7 +50,7 @@ let deckPrototype = {
         }
     },
 
-	addCard: function(rank, suit) {
+    addCard: function(rank, suit) {
         let card = {};
         Object.assign(card, cardPrototype);
         card.rank = rank; card.suit = suit;
