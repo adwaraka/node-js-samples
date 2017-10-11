@@ -36,7 +36,7 @@ let deckPrototype = {
     },
 
     showDeck: function(){
-        this.cards.forEach((value) => {console.log(value)});
+        this.cards.forEach((value) => {console.log(value.suit, value.rank)});
     },
 
     shuffleDeck: function(count){
