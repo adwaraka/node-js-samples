@@ -39,16 +39,16 @@ let deckPrototype = {
         this.cards.forEach((value) => {console.log(value)});
     },
 
-	shuffleDeck: function(count){
-		let val1, val2;
-		while (count > 0) {
+    shuffleDeck: function(count){
+        let val1, val2;
+        while (count > 0) {
             val1 = this.getRandomInt(0, 52);
-		    val2 = this.getRandomInt(0, 52);
+            val2 = this.getRandomInt(0, 52);
             //console.log("swapping", val1, val2);
             this.swapCards(val1, val2);
-			count-=1
-		}
-	}
+            count-=1
+        }
+    }
 }
 
 deck = Object.create(deckPrototype);
