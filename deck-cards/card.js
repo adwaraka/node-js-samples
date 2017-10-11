@@ -48,12 +48,20 @@ let deckPrototype = {
             this.swapCards(val1, val2);
             count-=1
         }
+    },
+
+	addCard: function(rank, suit) {
+        let card = {};
+        Object.assign(card, cardPrototype);
+        card.rank = rank; card.suit = suit;
+        this.cards.push(card);
     }
 }
 
-deck = Object.create(deckPrototype);
+let deck = Object.create(deckPrototype);
 deck.createDeck();
 //deck.showDeck();
 //console.log(deck.count);
 deck.shuffleDeck(100);
+deck.addCard("Joker", "Joker");
 deck.showDeck();
