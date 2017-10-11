@@ -10,11 +10,11 @@ let deckPrototype = {
     cards: [],
     count: 0,
 
-	swapCards: function(val1, val2) {
-		let temp = this.cards[val1];
-		this.cards[val1] = this.cards[val2];
-		this.cards[val2] = temp;
-	},
+    swapCards: function(val1, val2) {
+        let temp = this.cards[val1];
+        this.cards[val1] = this.cards[val2];
+        this.cards[val2] = temp;
+    },
 
     getRandomInt: function (min, max) {
         min = Math.ceil(min);
